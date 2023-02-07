@@ -6,7 +6,7 @@ const char* password = "<your wifi password>";
 
 int ledPin = 13;
 
-int timezone = -6 * 3600; //CST
+int timezone = -6 * 3600; //CST use your timezone offset in place of the "-6"
 int dst = 0;
 
 void setup() {
@@ -33,7 +33,7 @@ void setup() {
   Serial.println();
 
   Serial.println("Wifi Connected Success!");
-  Serial.print("NodeMCU IP Address : ");
+  Serial.print("IP Address : ");
   Serial.println(WiFi.localIP() );
 
   configTime(timezone, dst, "pool.ntp.org","time.nist.gov");
