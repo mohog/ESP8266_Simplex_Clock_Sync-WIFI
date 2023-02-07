@@ -4,7 +4,7 @@
 const char* ssid = "<your wifi ssid>";
 const char* password = "<your wifi password>";
 
-int ledPin = 13;
+int ledPin = D1;
 
 int timezone = -6 * 3600; //CST use your timezone offset in place of the "-6"
 int dst = 0;
