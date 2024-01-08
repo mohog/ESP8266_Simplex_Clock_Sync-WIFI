@@ -17,7 +17,7 @@ void setup() {
   pinMode(ledPin,OUTPUT);
   digitalWrite(ledPin,LOW);
 
-  Serial.begin(115200);
+  Serial.begin(9600);
   Serial.println();
   Serial.println("\n\nNTP Time Test\n");
   Serial.print("Wifi connecting to ");
